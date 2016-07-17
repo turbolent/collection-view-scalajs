@@ -8,7 +8,7 @@ scalaVersion := "2.11.8"
 
 libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.9.1"
 
-jsDependencies += "org.webjars.npm" % "collection-view" % "0.1.8" / "collection-view/0.1.8/dist/index.js"
+jsDependencies += "org.webjars.npm" % "collection-view" % "0.1.9" / "collection-view/0.1.9/dist/index.js"
 jsDependencies += RuntimeDOM
 
 publishMavenStyle := true
