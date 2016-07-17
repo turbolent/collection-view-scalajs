@@ -6,6 +6,8 @@ version := "1.0-SNAPSHOT"
 
 scalaVersion := "2.11.8"
 
+resolvers += Resolver.jcenterRepo
+
 libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.9.1"
 
 jsDependencies += "org.webjars.npm" % "collection-view" % "0.1.9" / "collection-view/0.1.9/dist/index.js"
