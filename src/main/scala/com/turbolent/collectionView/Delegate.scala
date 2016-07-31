@@ -10,5 +10,9 @@ import scala.scalajs.js.annotation.ScalaJSDefined
 trait Delegate extends js.Object {
   def getCount(): Int
   def configureElement(element: dom.Element, index: Int)
-  def onScroll(view: CollectionView) {}
+}
+
+@ScalaJSDefined
+trait ScrollDelegate extends js.Object {
+  def onScroll(view: CollectionView)
 }
