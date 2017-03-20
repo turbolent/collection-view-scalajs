@@ -3,9 +3,10 @@ package com.turbolent.collectionView
 import org.scalajs.dom
 
 import scala.scalajs.js
+import scala.scalajs.js.annotation.ScalaJSDefined
 
 
-@js.native
+@ScalaJSDefined
 trait Layout extends js.Object {
   def getContentSize(count: Int, containerSize: Float): js.Array[Float]
   def updateContainerSize(containerSize: js.Array[Float]): Unit

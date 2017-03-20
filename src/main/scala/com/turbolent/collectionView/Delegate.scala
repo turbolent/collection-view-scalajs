@@ -11,8 +11,3 @@ trait Delegate extends js.Object {
   def getCount(): Int
   def configureElement(element: dom.Element, index: Int)
 }
-
-@ScalaJSDefined
-trait ScrollDelegate extends js.Object {
-  def onScroll(view: CollectionView)
-}
