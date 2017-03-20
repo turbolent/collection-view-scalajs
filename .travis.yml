@@ -10,5 +10,10 @@ env:
   global:
     secure: "t25wyrNRr0La76BVMRyLiFKv4fkpCzTD8bFjIHZ+k4hlqtUhAo0grSiyodaDrZShdaMEciCUDVH1PX1j/g+GnuN/yAsqBQ3iO0eCc0l0PZBjYrQ9dTq4FewtUw8uIRtsKiVSo1IVM0Rrbv5942GoaVEwEpFd/3swsPeTeIuBm4kuZfKHknpRncXTIY2hGS3dt47OjPqAAWmNNoLQfEcx6yHtTRJ5BF5GzGAlTtx7H3mrUgU0QNM4SXx4F+LEj8y5AfzCxe+fV0L9Doi3DmwHRnXBrJEuWsnXzl0Hk0oqi62pypeAuR9PUnPBfL0ct06BLz4CE/WyH6QVLgWTekXHQ6UweZ9f2ga7WKPozNa+ZTReN6KT2l+utxZVnOvxF9SAXUQHfxgmCLBLq0Ekw05LCL82CUjb0C6vwLwLN/N9sK6EtxxGcTT64epGnXuWbSBglNbAnBv/EbDrFV1vj/iqAaSWbFao9PbDwENz9U0754AjN0tBaXLQBPATbmpj2RMehV1Wg3wBcR9C9MIyHj0GWc8KDKOn/UlF/vhbnukNHmyFflO8YzMuxvqVa0MJggnUxzEnQRzu9lXejkevX2dixYXLqPLUB9/mu/Y4BYms/9OC/NoIRB/B1mVvq936VXSK0WwQX2JN1rE3KO4ycgwAEXD98a1cKBsEkM+Z8RwMs8M="
 
+before_install:
+  - . $HOME/.nvm/nvm.sh
+  - nvm install stable
+  - nvm use stable
+
 after_success:
   - .travis/deploy.sh

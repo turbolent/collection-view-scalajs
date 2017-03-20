@@ -3,8 +3,10 @@ package com.turbolent.collectionView
 import org.scalajs.dom
 
 import scala.scalajs.js
+import scala.scalajs.js.annotation.JSImport
 
 
+@JSImport("collection-view", "GridLayout")
 @js.native
 class GridLayout extends Layout {
   override def getContentSize(count: Int, containerSize: Float): js.Array[Float] = js.native

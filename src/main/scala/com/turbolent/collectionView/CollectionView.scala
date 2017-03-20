@@ -3,8 +3,10 @@ package com.turbolent.collectionView
 import org.scalajs.dom
 
 import scala.scalajs.js
+import scala.scalajs.js.annotation.JSImport
 
 
+@JSImport("collection-view", "CollectionView")
 @js.native
 class CollectionView(element: dom.Element, layout: Layout, delegate: Delegate) extends js.Object {
   def updateCurrentIndices(): Unit = js.native
